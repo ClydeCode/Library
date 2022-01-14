@@ -1,0 +1,80 @@
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    height: 100%;
+}
+
+.header {
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 35px;
+    padding: 20px;
+    background-color: rgb(113, 161, 0);
+    color:rgb(171, 245, 0)
+}
+
+.inputBox {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 100%;
+    background-color: rgb(122, 153, 255);
+}
+
+.inputBox-text {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 25px;
+}
+
+.inputBox-inputs {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.inputBox-inputs input{
+    margin-top: 35px;
+    width: 250px;   
+    height: 32px;
+}
+
+input:invalid {
+    border: 2px solid red;
+}
+
+.checkbox-box {
+    text-align: center;
+    margin-top: 35px;
+    color: black;
+}
+
+.inputBox-button {
+    margin-top: 25px;
+    text-align: center;
+}
+
+.inputBox-button button {
+    height: 30px;
+    width: 100px;
+}
+
+.holder {
+    display: flex;
+    height: 100%;
+}
+
+.table {
+    margin: 30px;
+    width: 80%;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+td, th {
+    border: 1px solid black;
+    padding: 8px;
+}

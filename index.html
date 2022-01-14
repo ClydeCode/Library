@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="styles.css">
+        <script src="javascript.js" defer></script>
+        <title>Book Library</title>
+    </head>
+    <body>
+        <div class="header">
+            Book Library
+        </div>
+        <div class="holder">
+            <div class="inputBox">
+                <div class="inputBox-text">
+                    Add new book
+                </div>
+                <div class="inputBox-inputs">
+                <input type="text" placeholder="Title" id="title" minlength="1">
+                <input type="text" placeholder="Author" id="author" minlength="1">
+                <input type="text" placeholder="Pages" id="pages" minlength="1">
+             </div>
+                <div class="checkbox-box">
+                    Read
+                    <input type="checkbox" id="checkbox">
+                </div>
+                <div class="inputBox-button">
+                    <button id="button">Add</button>
+                </div>
+            </div>
+            <div class="table">
+                <table id="table">
+                    <tr>
+                        <th>Title</th>
+                        <th>Author</th>
+                        <th>Pages</th>
+                        <th>Read</th>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </body>
+</html>
