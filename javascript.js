@@ -80,13 +80,20 @@ class Book {
 }
         
 button.addEventListener('click', () => {
-    if (title.value && author.value && pages.value) {
+    if (title.checkValidity() && author.checkValidity() && pages.checkValidity()) {
         Book.addBookToLibrary(title.value, author.value, pages.value, checkbox.checked);
     }
     Book.displayBooks();
 });
         
+title.addEventListener('input', () => {
+    if (title.validity.tooShort) {
+        title.setCustomValidity('title is too short');
+        title.reportValidity();
+    } else {
+        title.setCustomValidity('');
+    };
+});   
         
-        
-        
+     
         
